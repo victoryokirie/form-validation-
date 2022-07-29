@@ -1,0 +1,91 @@
+body {
+    background: rgba(255, 255, 255, 0.935);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 500px;
+    margin:  auto;
+    place-content: center;
+}
+
+.form {
+    width: 80%;
+    padding: 50px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+    position: relative;
+}
+
+.form h1 {
+    color: black;
+    text-align: center;
+}
+
+.form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+
+}
+
+.input_control {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input_control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input_control input:focus {
+    outline: 0;
+}
+
+.input_control.success input {
+    border-color: #09c372;
+}
+
+.input_control.error input {
+    border-color: #ff3860;
+}
+
+
+
+.input_control p {
+    visibility: hidden;
+}
+
+.error p {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+    visibility: visible;
+}
+.input_control i {
+    position: absolute;
+    right: 10px;
+    top: 28px;
+    visibility: hidden;
+}
+
+.success i.fa-check-circle {
+    visibility: visible;
+    color: green;
+}
+
+.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #ff3860;
+}
